@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="mediequeres.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+</head>
+<body>
+    <nav id="destop-nav"> 
+        <div class="logo">HAJI BASH</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="#experience">EXPERIENCE</a></li>
+                <li><a href="#project">PROJECT</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburg-nav">
+        <div class="logo">HAJI BASH</div>
+        <div class="hamburg-menu">
+            <div class="hamburg-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div> 
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()"></a>ABOUT</a></li>
+                <li><a href="#contact" onclick="toggleMenu()"></a>CONTACT</a></li>
+                <li><a href="#experience" onclick="toggleMenu()"></a>EXPERIENCE</a></li>
+                <li><a href="#project" onclick="toggleMenu()"></a>PROJECT</a></li> 
+            </div>
+        </div> 
+    </nav>
+    <section id="profile">
+        <div class="section-pic-container">
+            <img src="profile-pic.png" alt="john">
+        </div>
+        <div class="section__text">
+            <p class="section__text_p1">Hello, I'm</p>
+            <h1 class="tittle">BASH</h1>
+            <p class="section__text_p2">Frontend Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2"
+                onclick="window.open('./asset/resume-example-pdf')">
+                Download CV
+                </button>
+                <button class="btn btn-color-1"
+                onclick="Location.href='./#contact'">
+                Contact info
+                </button>
+            </div>
+            <div class="social-container">
+                <img src="linkedin.png" alt="my linkedin profile" class="icon" onclick="location.href='https://linkedin.com'">
+                <img src="github.png" alt="my github profile" class="icon" onclick="location.href='https://github.com'">
+            </div>
+        </div>
+    </section>
+    <link rel="stylesheet" href="script.js">
+</body>
+</html>
